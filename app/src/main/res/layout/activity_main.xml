@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.testapp.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E91E63"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Americano"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+
+        <Button
+            android:id="@+id/americano_decrement"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:onClick="americanoDecrement"
+            />
+
+        <TextView
+            android:id="@+id/americano_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/americano_increment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:onClick="americanoIncrement"
+            />
+
+        <TextView
+            android:id="@+id/americano_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs.50"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9C27B0"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espresso"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            />
+
+
+        <Button
+            android:id="@+id/espresso_decrement"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:onClick="espressoDecrement"
+            />
+
+        <TextView
+            android:id="@+id/espresso_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/espresso_increment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:onClick="espressoIncrement"
+            />
+
+        <TextView
+            android:id="@+id/espresso_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs.50"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F44336"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capuccino"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+
+        <Button
+            android:id="@+id/capuccino_decrement"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:textColor="#000000"
+            android:onClick="capuccinoDecrement"
+            />
+
+        <TextView
+            android:id="@+id/capuccino_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/capuccino_increment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textColor="#000000"
+            android:onClick="capuccinoIncrement"
+            />
+
+        <TextView
+            android:id="@+id/capuccino_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs.77"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frapuccino"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+
+        <Button
+            android:id="@+id/frapuccino_decrement"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:textColor="#000000"
+            android:onClick="frapuccinoDecrement"
+            />
+
+        <TextView
+            android:id="@+id/frapuccino_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/frapuccino_increment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textColor="#000000"
+            android:onClick="frapuccinoIncrement"
+            />
+
+        <TextView
+            android:id="@+id/frapuccino_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs.72"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/total_order_amount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Payable Amount: Rs.00"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            />
+
+        <Button
+            android:id="@+id/orderNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Now"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+
